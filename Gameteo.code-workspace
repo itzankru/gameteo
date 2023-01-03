@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "GameteoWebApi"
+		},
+		{
+			"path": "GameteoDTO"
+		},
+		{
+			"path": "Infrastraction"
+		},
+		{
+			"path": "GameteoConsole"
+		}
+	],
+	"settings": {}
+}

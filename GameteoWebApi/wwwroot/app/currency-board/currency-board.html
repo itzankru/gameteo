@@ -1,0 +1,39 @@
+<div ng-controller='currencyboard-controller as me' class="area-body" style="display: flex;">
+    <div style="width: 40%;height: 300px;">
+        
+    </div>    
+    <div style="width: 60%;">
+        <div class="cb-header_text">
+            <h2>Central bank exchange rate fixing</h2>
+            <p>Exchange rates of commonly traded currencies are declared every working day after 2.30 p.m. 
+            and are valid for the current working day and, 
+            where relevant, the following Saturday, Sunday or public holiday 
+            (for example, an exchange rate declared on Tuesday 23 December is valid for Tuesday 23 December, 
+            the public holidays 24–26 December, and Saturday 27 December and Sunday 28 December).</p>
+        </div>   
+        <div class="cb-header">
+            <input class="cb-header_input"  type="text" placeholder="name or currency code"  ng-model="me.currencyName" > 
+            <input class="cb-header_date"  type="date" id="exampleInput" name="input" ng-model="me.date" placeholder="yyyy-MM-dd" min="2000-01-01" max="2025-12-31" required />
+            <button class="cb-header_btn" ng-click="me.onChangeDate()">Submit</button>                  
+        </div>
+        <table class="cb-table" style="border-spacing: 0px;"  >
+            <thead  >
+                <tr >
+                    <th class="cb-table-col_left">Currency</th>
+                    <th class="cb-table-col_centr">Amount</th>
+                    <th class="cb-table-col_centr">Code</th>
+                    <th class="cb-table-col_centr">Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="itm in me.getRates()">
+                        <td class="cb-table-col_left">{{itm.name}}</td>
+                        <td class="cb-table-col_right">{{itm.lotsize}}</td>
+                        <td class="cb-table-col_centr">{{itm.code}}</td>
+                        <td class="cb-table-col_centr">{{itm.rate}}</td>
+                    </tr>
+            </tbody>
+        </table>
+     </div>       
+    </div>    
+</div>

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Infrastraction"
+		},
+		{
+			"path": "../GameteoDTO"
+		}
+	],
+	"settings": {}
+}
