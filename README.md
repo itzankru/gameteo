@@ -20,9 +20,12 @@ Console application by C#, should read data by URL and write courses in DB. Atte
 SPA(Angular JS / React JS) + ASP.NE Core Web API. Use Case: User can choose the date and type of currency and preview the currency rate on this day. Conditions: on holidays and public holidays rate of currency equals by rate nearest work day.
 
 You should use:
-Net.Core, Web Api
-Entity Framework  Code First
-JS framework by your choice (React | Angular JS) 
+Net.Core, WebApi,
+
+Entity Framework: code first
+
+JS framework: by your choice (React | Angular JS) 
+
 ---------------------------------------------------------------------------------------------------------------------------------
 Usage
 
