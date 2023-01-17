@@ -1,6 +1,6 @@
 Test task for position Full Stack Developer
-
-Terms: for complete this task we offer one calendar week. If you need more time, tell your personal manager about it.
+--------------------------------------------------------------------------------------------------------------------------------
+Terms: to complete this task we offer one calendar week. If you need more time, tell your personal manager about it.
 
 You should send complicated work to our manager.
 
@@ -23,3 +23,17 @@ You should use:
 Net.Core, Web Api
 Entity Framework  Code First
 JS framework by your choice (React | Angular JS) 
+---------------------------------------------------------------------------------------------------------------------------------
+Usage
+
+Run the following command:
+
+$ git clone https://github.com/itznakru/gameteo.git
+
+$ docker build -t gameteo .
+
+$ docker run -d -p 8080:8080 gameteo
+
+Open the following url in the browser:
+http://localhost:8080
+
