@@ -3,9 +3,7 @@ using ItZnak.Infrastruction.Services;
 using ItZnak.Infrastruction.Web.Exceptions;
 using Microsoft.AspNetCore.Http;
 
-
 namespace  ItZnak.Infrastruction.Web.Middleware{
-    
 /*======================================================================================================================================================= 
 Класс:GlobalExceptionMdl
 Цель: В конвейеере обработки запроса  перехватить не обработнное исключение и в зависимости от типа исключения сформировать HTTP Response

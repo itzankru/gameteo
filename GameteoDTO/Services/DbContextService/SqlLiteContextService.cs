@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using GameteoDTO.DTO;
 
 namespace GameteoDTO.Services{
-
     /* 
         Class: SqlLiteContextService
         Назначение: Реализация IDbContextService 

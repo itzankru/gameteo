@@ -4,9 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using ItZnak.Infrastruction.Services;
 using System.Diagnostics;
 
-
-
-
 /*======================================================================================================================================================= 
 Класс:WebApiController
 Назначение:Базовая реализация IMWebApiController

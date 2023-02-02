@@ -46,6 +46,7 @@ GameteoDTO.Services.CurrencyDictionaryService: Справочник наимен
 
 internal partial class Program
 {
+    const int HTTP_PORT = 8080;
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
@@ -62,7 +63,7 @@ internal partial class Program
         builder.Services.AddDbContextService();
         builder.Services.AddCurrencyDictionaryService();
         /* ConfigureKestrel*/
-        builder.WebHost.ConfigureKestrel(options => options.Listen(IPAddress.Any, 8080));
+        builder.WebHost.ConfigureKestrel(options => options.Listen(IPAddress.Any, HTTP_PORT));
 
         var app = builder.Build();
 
@@ -88,6 +89,7 @@ internal partial class Program
             },
             FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot"))
         });
+        app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         app.UseAuthorization();
         app.UseGlobalExceptionMdl();
         app.MapControllers();

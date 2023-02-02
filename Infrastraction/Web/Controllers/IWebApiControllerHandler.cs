@@ -7,7 +7,6 @@
 
 ======================================================================================================================================================= */
 
-
 namespace ItZnak.Infrastruction.Web.Controllers
 {
     public interface IWebApiControllerHandler<TIn, TOut>

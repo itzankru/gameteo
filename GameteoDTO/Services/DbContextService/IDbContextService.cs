@@ -14,6 +14,5 @@ namespace  GameteoDTO.Services
          DbSet<Currency> CURRENCY { get; set; }
 
          DbContext CTX {get;}
-
     }
 }

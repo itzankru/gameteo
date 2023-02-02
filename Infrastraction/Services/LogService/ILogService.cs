@@ -5,6 +5,5 @@ namespace ItZnak.Infrastruction.Services{
         void Info(string s);
         void Exception(Exception e);
         void Exception(string s);
- 
     }
 }
