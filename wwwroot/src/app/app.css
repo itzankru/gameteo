@@ -1,0 +1,23 @@
+:root {
+  --border-color: #9d999d;
+  --li-color: #606060;
+  --li-hover-color: #2526a9;
+  --text-color: #2526a9;
+  --min-width-area: 1000px;
+  --border-top-color-sticky-panel: #f15b24;
+  --sticky-panel-input-box-btn_bg: #dadaea;
+
+  --sticky-panel-input-box-border: #404646;
+  --sticky-panel-btn-reg-bg: #4682ca;
+  --sticky-panel-btn-account-bg: #404646;
+  --border-radius: 2px;
+  --btn-text-size: 18px;
+}
+
+.app__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
